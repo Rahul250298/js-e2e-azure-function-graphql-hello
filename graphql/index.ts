@@ -4,6 +4,8 @@ import { ApolloServer, gql} from "apollo-server-azure-functions";
 const typeDefs = gql`
   type Query {
     hello: String
+     nosql: String
+    demo : String
   }
 `;
 
@@ -11,6 +13,8 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     hello: () => "Hello from our GraphQL backend!",
+     nosql: () => "Hello from Rahul",
+    demo:  () => "hello from demo",
   },
 };
 
